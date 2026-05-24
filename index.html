@@ -3,34 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPN-RHD</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.6; }
-        .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
-        .card { background: #fff; border-radius: 16px; padding: 40px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
-        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
-        h2 { font-size: 20px; font-weight: 600; margin-bottom: 16px; }
-        p { margin-bottom: 12px; color: #555; }
-        a { color: #0071e3; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .links { display: flex; gap: 16px; margin-top: 16px; }
-        .links a { display: inline-block; padding: 10px 24px; background: #0071e3; color: #fff; border-radius: 8px; font-weight: 500; }
-        .links a:hover { background: #0077ed; text-decoration: none; }
-        footer { text-align: center; color: #999; font-size: 14px; margin-top: 40px; }
-    </style>
+    <title>VPN-RHD - Secure VPN & Smart Downloader for iOS</title>
+    <meta name="description" content="VPN-RHD is a fast, secure VPN client with built-in media downloader for iOS. Powered by sing-box and yt-dlp.">
+    <meta property="og:title" content="VPN-RHD - Secure VPN & Smart Downloader">
+    <meta property="og:description" content="A powerful iOS app combining VPN and media downloading. All processing on-device, zero data collection.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <h1>VPN-RHD</h1>
-            <p>A fast, secure VPN client for iOS with built-in media download capabilities.</p>
-            <div class="links">
-                <a href="privacy.html">Privacy Policy</a>
+    <!-- Navigation -->
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">&#x1F512;</span>
+                VPN-RHD
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#features">Features</a>
+                <a href="privacy.html">Privacy</a>
                 <a href="support.html">Support</a>
+            </nav>
+            <a href="#" class="btn btn-primary btn-sm nav-cta">Download on App Store</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <span class="badge">Now available on iOS</span>
+                        <h1>VPN + Downloader<br>in One App</h1>
+                        <p class="hero-desc">Fast, secure VPN client powered by sing-box. Built-in media downloader with yt-dlp. Everything runs locally on your device — zero data collection.</p>
+                        <div class="hero-actions">
+                            <a href="#" class="btn btn-primary btn-lg">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                                App Store
+                            </a>
+                            <a href="#features" class="btn btn-outline btn-lg">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="hero-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="screen-header">VPN-RHD</div>
+                                <div class="screen-status">&#x1F310; Connected</div>
+                                <div class="screen-stat"><span>24.5 GB</span><small>Downloaded</small></div>
+                                <div class="screen-stat"><span>3</span><small>Profiles</small></div>
+                                <div class="screen-stat"><span>12 Mbps</span><small>Throughput</small></div>
+                                <div class="screen-toggle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why VPN-RHD</h2>
+                    <p class="section-subtitle">Two powerful tools, one lightweight app. All processing stays on your device.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">&#x1F310;</div>
+                        <h3>Secure VPN</h3>
+                        <p>Powered by sing-box core. Supports multiple protocols. You control the server, we never see your traffic.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#x2B07;&#xFE0F;</div>
+                        <h3>Media Downloader</h3>
+                        <p>Built-in yt-dlp engine. Download videos as MP4 or extract audio as MP3. Thousands of sites supported.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#x1F512;</div>
+                        <h3>On-Device Processing</h3>
+                        <p>All downloads, transcoding, and VPN routing happen locally. No analytics, no tracking, no servers in the middle.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#x1F3A5;</div>
+                        <h3>iOS-Optimized Video</h3>
+                        <p>Auto-detects codec compatibility. Converts to H.264 via hardware-accelerated VideoToolbox when needed.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#x1F4E5;</div>
+                        <h3>Batch Operations</h3>
+                        <p>Select multiple files at once. Batch share, save to Photos, or delete. Swipe or long-press for quick actions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#x1F310;&#xFE0F;</div>
+                        <h3>No Logs, No Tracking</h3>
+                        <p>We don't operate any servers. Your VPN configs, download history, and files stay on your device. Period.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p class="section-subtitle">Simple, transparent, and completely under your control.</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <h3>Import Config</h3>
+                        <p>Add your VPN subscription link or paste a manual sing-box configuration.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <h3>Connect</h3>
+                        <p>One tap to connect. The built-in sing-box core establishes a secure tunnel to your server.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <h3>Download</h3>
+                        <p>Paste any video URL. The embedded yt-dlp engine downloads and converts to iOS-compatible MP4.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta">
+            <div class="container">
+                <h2>Ready to get started?</h2>
+                <p>VPN-RHD is available on the iOS App Store. Free to download.</p>
+                <a href="#" class="btn btn-primary btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    Download on the App Store
+                </a>
+                <p class="cta-note">iOS 18+ &bull; iPhone &bull; Free</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <span class="logo-icon">&#x1F512;</span>
+                        VPN-RHD
+                    </a>
+                    <p>Secure VPN and smart media downloader for iOS.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="support.html">Support</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Tech Stack</h4>
+                    <a href="https://github.com/SagerNet/sing-box" target="_blank">sing-box</a>
+                    <a href="https://github.com/yt-dlp/yt-dlp" target="_blank">yt-dlp</a>
+                    <a href="https://ffmpeg.org" target="_blank">FFmpeg</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VPN-RHD. All rights reserved.</p>
             </div>
         </div>
-    </div>
-    <footer>&copy; 2026 VPN-RHD. All rights reserved.</footer>
+    </footer>
 </body>
 </html>
