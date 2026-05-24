@@ -1,0 +1,8 @@
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body { font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',Roboto,sans-serif; color:#1d1d1f; background:#fff; line-height:1.6; -webkit-font-smoothing:antialiased; }
+img { max-width:100%; display:block; }
+a { color:#2563eb; text-decoration:none; }
+a:hover { color:#1d4ed8; }
+ul { list-style:none; }
+button { font:inherit; cursor:pointer; border:none; background:none; }
